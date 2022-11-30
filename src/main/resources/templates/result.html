@@ -6,6 +6,7 @@
 </head>
 <body>
 <h3 th:text="${title}"></h3>
+<section th:replace="components/time :: interceptor"></section>
 <ul>
     <li th:text="${user.dni}"></li>
     <li th:text="'Enable: ' + ${user.enable}"></li>

@@ -6,6 +6,7 @@
 </head>
 <body>
 <h3 th:text="${title}"></h3>
+<section th:replace="components/time :: interceptor"></section>
 <form th:action="@{/form}" method="post" th:object="${user}">
     <div>
         <label for="enable">Enable</label>
